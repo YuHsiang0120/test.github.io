@@ -1,0 +1,10 @@
+.img-fluid{
+    width: 40px;
+    height: 40px;
+}
+
+.led{
+    border: dashed;
+    border-color: cornflowerblue;
+    /* margin: 0px auto; */
+}

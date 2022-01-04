@@ -1,0 +1,26 @@
+table label{
+    float: right;
+}
+
+.type_text{
+    width: 150px;
+    float: right;
+}
+
+select{
+    height:25px;
+    width: 160px;
+    float: right;
+}
+
+#left1, #right1, #left2, #right2,
+ #left3, #right3, #left4, #right4,
+ #left5, #right5
+{
+    width: 460px;
+}
+
+.page{
+    color:red;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="register.js"></script>
+    <script type="text/javascript" src="eyes_change.js"></script>
+    <link rel="icon" href="C:\Users\陳昱翔\Desktop\html\HanWin\AnyConv.com__漢穎.ico">
+
+
+    <style type="text/css">
+        body {
+            margin: 0px;
+        }
+
+        #bg {
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            filter: Alpha(opacity=50);
+            opacity: 0.5;
+            background-color: #dcdcdc;
+            opacity: 0.1;
+            display: none;
+        }
+
+        #popbox {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            left: 50%;
+            top: 50%;
+            margin: -200px 0 0 -200px;
+            display: none;
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        #reg_title {
+            font-size: 30px;
+            margin-top: 5px;
+            margin-left: 10px;
+            font-weight: bolder;
+        }
+    </style>
+    <script type="text/javascript">
+        function register_open() {
+            document.getElementById("bg").style.display = "block";
+            document.getElementById("popbox").style.display = "block";
+        }
+        function register_close() {
+            document.getElementById("bg").style.display = "none";
+            document.getElementById("popbox").style.display = "none";
+        }
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <div id="login_frame">
+        <p id="image_logo">
+            <img src="../images/HanWin.jfif" width="120">
+        </p>
+        <form method="post" action="login.js">
+            <p>
+                <label class="label_input" for="username">帳號</label><input type="email" placeholder="請輸入帳號"
+                    id="username" class="text_field" required />
+            </p>
+            <p>
+                <label class="label_input" for="password"><img src="../images/closeeyes.png" id="eyes"
+                        onmousemove="eyes_change();" />密碼</label><input type="password" placeholder="請輸入密碼"
+                    id="password" class="text_field" required />
+            </p>
+            <div id="login_control">
+                <input type="button" id="btn_login" value="登入" onclick="login();" />
+                </br>
+                </br>
+                <a id="forget_pwd" href="ForgetPassword.html">忘記密碼？</a>
+                </br>
+                </br>
+                <hr size="0">
+                <input type="button" id="btn_register" value="建立帳戶" onclick="register();" />
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

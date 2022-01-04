@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+    <title>BMS utility</title>
+</head>
+
+<body>
+    <div id="BMS_utility">
+        <table>
+            <thead>
+                <tr>
+                    <th>Pack Voltage</th>
+                    <th>SOC</th>
+                    <th>Pack Current</th>
+                    <th>Capacity</th>
+                    <th>Temperature</th>
+                    <th>ADC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label class="paramater" id="lab_packv">00.000V</label></td>
+                    <td><label class="paramater" id="lab_soc">000%</label></td>
+                    <td><label class="paramater" id="lab_packc">-00.000A</label></td>
+                    <td><label class="paramater" id="lab_iacc">00.000Ah</label></td>
+                    <td><label class="paramater" id="lab_temp">000.0°C</label></td>
+                    <td><label class="paramater" id="lab_dsg_cap">00.0Ah</label></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cell_volt" style="border:2px black solid;">
+            <p>Cell Voltage</p>
+            <hr size="0">
+            <label id="cell_00">Cell_00=0.000V</label>
+            <hr class="line" size="0">
+            <label id="cell_01">Cell_01=0.000V</label>
+            <hr class="line" size="0">
+            <label id="cell_02">Cell_02=0.000V</label>
+            <hr class="line" size="0">
+            <label id="cell_03">Cell_03=0.000V</label>
+            <hr class="line" size="0">
+            <label id="cell_04">Cell_04=0.000V</label>
+            <hr class="line" size="0">
+            <label id="cell_05">Cell_05=0.000V</label>
+            <hr class="line" size="0">
+            <label id="cell_06">Cell_06=0.000V</label>
+            <hr class="line" size="0">
+            <label id="cell_07">Cell_07=0.000V</label>
+            <hr class="line" size="0">
+            <label id="cell_08">Cell_08=0.000V</label>
+            <hr class="line" size="0">
+            <label id="cell_09">Cell_09=0.000V</label>
+        </div>
+
+        <div class="lab_temp" style="border:2px black solid;">
+            <p>All Temperature</p>
+            <hr size="0">
+            <label id="die1_t">Die1_T = 000.0°C</label>
+            <hr class="line" size="0">
+            <label id="die2_t">Die2_T = 000.0°C</label>
+            <hr class="line" size="0">
+            <label id="rt0_t">RT_0 = 000.0°C = 000.0°C</label>
+            <hr class="line" size="0">
+            <label id="rt1_t">RT_1 = 000.0°C = 000.0°C</label>
+            <hr class="line" size="0">
+            <label id="rt2_t">RT_2 = 000.0°C = 000.0°C</label>
+            <hr class="line" size="0">
+            <label id="rt3_t">RT_3 = 000.0°C = 000.0°C</label>
+        </div>
+
+        <div>
+            <button id="btn_signout" onclick="index()">登出</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

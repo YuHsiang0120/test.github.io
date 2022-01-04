@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="search.js"></script>
+    <link rel="icon" href="C:\Users\陳昱翔\Desktop\html\HanWin\AnyConv.com__漢穎.ico">
+
+    <title>Protection PRM</title>
+</head>
+
+<body>
+    <!------------------------------上方導覽------------------------------>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HanWin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">主頁面</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" data-table="table table-borderless" type="search"
+                        placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!------------------------------上方導覽------------------------------>
+
+    <!------------------------------側邊導覽------------------------------>
+    <div class="d-flex align-items-start">
+        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"
+                onclick="location.href='pprm.html'">Protection PRM
+            </button>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    PRM Writer
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="prmwriter1.html">Page1</a></li>
+                    <li><a class="dropdown-item" href="prmwriter2.html">Page2</a></li>
+                    <li><a class="dropdown-item" href="prmwriter3.html">Page3</a></li>
+                    <li><a class="dropdown-item" href="prmwriter4.html">Page4</a></li>
+                    <li><a class="dropdown-item" href="prmwriter5.html">Page5</a></li>
+                </ul>
+            </li>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"
+                onclick="location.href='alarm.html'">Alarm
+            </button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">FW Version
+            </button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"
+                onclick="location.href='eventrecord.html'">Event Record
+            </button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">FW Upgrade
+            </button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Authority
+            </button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+            </div>
+        </div>
+        <!------------------------------側邊導覽------------------------------>
+
+        <!------------------------------中間畫面------------------------------>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Rsen</td>
+                    <td id="Rsen">uOhm</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Battery Capacity</td>
+                    <td id="Battery_Capacity">Ah</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">RSNS select</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>OV delect voltage</td>
+                    <td id="ov_d_v">V</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>OV delay time</td>
+                    <td id="ov_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>OV recover voltage</td>
+                    <td id="ov_r_v">V</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>OV recover delay time</td>
+                    <td id="ov_r_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>UV detect voltage</td>
+                    <td id="UV_d_v">V</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>UV recover voltage</td>
+                    <td id="uv_r_v">V</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>UV delay time</td>
+                    <td id="uv_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td>UV recover delay time</td>
+                    <td id="uv_r_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td>SCD detect level</td>
+                    <td id="scd_d_l">A</td>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <td>SCD delay time</td>
+                    <td id="scd_d_t">us</td>
+                </tr>
+                <tr>
+                    <th scope="row">14</th>
+                    <td>SCD recover delay time</td>
+                    <td id="scd_r_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">15</th>
+                    <td>OCD detect level</td>
+                    <td id="ocd_d_l">A</td>
+                </tr>
+                <tr>
+                    <th scope="row">16</th>
+                    <td>OCD delay time</td>
+                    <td id="ocd_d_t">ms</td>
+                </tr>
+                <tr>
+                    <th scope="row">17</th>
+                    <td>OCD recover delay time</td>
+                    <td id="ocd_r_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">18</th>
+                    <td>OT detect level</td>
+                    <td id="ot_d_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">19</th>
+                    <td>OT delay time</td>
+                    <td id="ot_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">20</th>
+                    <td>OT recover level</td>
+                    <td id="ot_r_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">21</th>
+                    <td>OT recover delay time</td>
+                    <td id="ot_r_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">22</th>
+                    <td>UT detect level</td>
+                    <td id="ut_d_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">23</th>
+                    <td>UT delay time</td>
+                    <td id="ut_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">24</th>
+                    <td>UT recover level</td>
+                    <td id="ut_r_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">25</th>
+                    <td>UT recover delay time</td>
+                    <td id="ut_r_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">26</th>
+                    <td>DOT detect level</td>
+                    <td id="dot_d_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">27</th>
+                    <td>DOT delay time</td>
+                    <td id="dot_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">28</th>
+                    <td>DOT recover level</td>
+                    <td id="dot_r_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">29</th>
+                    <td>DOT recover delay time</td>
+                    <td id="dot_r_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">30</th>
+                    <td>DUT detect level</td>
+                    <td id="dut_d_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">31</th>
+                    <td>DUT delay time</td>
+                    <td id="dut_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">32</th>
+                    <td>DUT recover level</td>
+                    <td id="dut_r_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">33</th>
+                    <td>DUT recover delay time</td>
+                    <td id="dut_r_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">34</th>
+                    <td>COT detect level</td>
+                    <td id="cot_d_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">35</th>
+                    <td>COT delay time</td>
+                    <td id="cot_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">36</th>
+                    <td>COT recover level</td>
+                    <td id="cot_r_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">37</th>
+                    <td>COT recover delay time</td>
+                    <td id="cot_r_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">38</th>
+                    <td>CUT detect level</td>
+                    <td id="cut_d_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">39</th>
+                    <td>CUT delay time</td>
+                    <td id="cut_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">40</th>
+                    <td>CUT recover level</td>
+                    <td id="cut_r_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">41</th>
+                    <td>CUT recover delay time</td>
+                    <td id="cut_r_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">42</th>
+                    <td>OCC detect level</td>
+                    <td id="occ_d_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">43</th>
+                    <td>OCC delay time</td>
+                    <td id="occ_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">44</th>
+                    <td>OCC recover delay time</td>
+                    <td id="occ_r_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">45</th>
+                    <td>SW_OCD_level1</td>
+                    <td id="sw_o_l1">A</td>
+                </tr>
+                <tr>
+                    <th scope="row">46</th>
+                    <td>SW_OCD_delay1</td>
+                    <td id="sw_o_d1">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">47</th>
+                    <td>SW_OCD_level2</td>
+                    <td id="sw_o_l2">A</td>
+                </tr>
+                <tr>
+                    <th scope="row">48</th>
+                    <td>SW_OCD_delay2</td>
+                    <td id="sw_o_d2">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">49</th>
+                    <td>SW_OCD_level3</td>
+                    <td id="sw_o_l3">A</td>
+                </tr>
+                <tr>
+                    <th scope="row">50</th>
+                    <td>SW_OCD_delay3</td>
+                    <td id="sw_o_d3">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">51</th>
+                    <td>SW UV delect voltage</td>
+                    <td id="sw_uv_d_v">V</td>
+                </tr>
+                <tr>
+                    <th scope="row">52</th>
+                    <td>SW UV delay time</td>
+                    <td id="sw_uv_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">53</th>
+                    <td>SW UV recover voltage</td>
+                    <td id="sw_uv_r_v">V</td>
+                </tr>
+                <tr>
+                    <th scope="row">54</th>
+                    <td>SW UV recover delay time</td>
+                    <td id="sw_uv_r_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">55</th>
+                    <td>UV to SHUTDOWN delay time</td>
+                    <td id="uv_t_s_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">56</th>
+                    <td>idle threshold</td>
+                    <td id="i_thold">A</td>
+                </tr>
+                <tr>
+                    <th scope="row">57</th>
+                    <td>idle poweroff delay time</td>
+                    <td id="i_poff_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">58</th>
+                    <td>Cell Balance delta voltage</td>
+                    <td id="c_b_d_v">mV</td>
+                </tr>
+                <tr>
+                    <th scope="row">59</th>
+                    <td>Cell Balance start voltage</td>
+                    <td id="c_b_s_v">V</td>
+                </tr>
+                <tr>
+                    <th scope="row">60</th>
+                    <td>Cell Balance start delay time</td>
+                    <td id="c_b_s_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">61</th>
+                    <td>Cell Balance stop HR</td>
+                    <td id="c_b_s_hr">hr</td>
+                </tr>
+                <tr>
+                    <th scope="row">62</th>
+                    <td>Cell Balance interval time</td>
+                    <td id="c_b_i_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">63</th>
+                    <td>Cell Balance recover delay time</td>
+                    <td id="c_b_r_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">64</th>
+                    <td>SW Unbalance Protect voltage</td>
+                    <td id="sw_u_p_v">mV</td>
+                </tr>
+                <tr>
+                    <th scope="row">65</th>
+                    <td>SW Unbalance delay time</td>
+                    <td id="sw_u_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">66</th>
+                    <td>SW Unbalance recover voltage</td>
+                    <td id="sw_u_r_v">mV</td>
+                </tr>
+                <tr>
+                    <th scope="row">67</th>
+                    <td>SW Unbalance recover delay time</td>
+                    <td id="sw_u_r_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">68</th>
+                    <td>Start flag</td>
+                    <td id="start_flag"></td>
+                </tr>
+                <tr>
+                    <th scope="row">69</th>
+                    <td>Shutdown flag</td>
+                    <td id="shutdown_flag"></td>
+                </tr>
+                <tr>
+                    <th scope="row">70</th>
+                    <td>Soft start 1 delay time</td>
+                    <td id="soft_s_1_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">71</th>
+                    <td>Soft start 2 delay time</td>
+                    <td id="soft_s_2_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">72</th>
+                    <td>UT to shutdown delay time</td>
+                    <td id="ut_t_s_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">73</th>
+                    <td>LV to shutdown voltage</td>
+                    <td id="lv_t_s_v">v</td>
+                </tr>
+                <tr>
+                    <th scope="row">74</th>
+                    <td>LV to shutdown delay time</td>
+                    <td id="lv_t_s_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">75</th>
+                    <td>HWUV recover check time</td>
+                    <td id="hwuv_r_c_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">76</th>
+                    <td>SWUV recover check time</td>
+                    <td id="swuv_r_c_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">77</th>
+                    <td>Current filter limit</td>
+                    <td id="c_f_l">A</td>
+                </tr>
+                <tr>
+                    <th scope="row">78</th>
+                    <td>LED SOC level1</td>
+                    <td id="led_soc_l1">%</td>
+                </tr>
+                <tr>
+                    <th scope="row">79</th>
+                    <td>LED SOC level2</td>
+                    <td id="led_soc_l2">%</td>
+                </tr>
+                <tr>
+                    <th scope="row">80</th>
+                    <td>LED SOC level3</td>
+                    <td id="led_soc_l3">%</td>
+                </tr>
+                <tr>
+                    <th scope="row">81</th>
+                    <td>LED SOC level4</td>
+                    <td id="led_soc_l4">%</td>
+                </tr>
+                <tr>
+                    <th scope="row">82</th>
+                    <td>LED SOC level5</td>
+                    <td id="led_soc_l5">%</td>
+                </tr>
+                <tr>
+                    <th scope="row">83</th>
+                    <td>LED display delay time</td>
+                    <td id="led_dis_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">84</th>
+                    <td>Second portection voltage</td>
+                    <td id="s_p_v">V</td>
+                </tr>
+                <tr>
+                    <th scope="row">85</th>
+                    <td>Second portection delay time</td>
+                    <td id="s_p_d_t">sec</td>
+                </tr>
+                <tr>
+                    <th scope="row">86</th>
+                    <td>INNO safety resistor value</td>
+                    <td id="inno_s_r_v"></td>
+                </tr>
+                <tr>
+                    <th scope="row">87</th>
+                    <td>INNO safety offset</td>
+                    <td id="inno_s_offset"></td>
+                </tr>
+                <tr>
+                    <th scope="row">88</th>
+                    <td>SW OCC voltage recover</td>
+                    <td id="sw_occ_v_r">mV</td>
+                </tr>
+                <tr>
+                    <th scope="row">89</th>
+                    <td>Battery Cap Nominal</td>
+                    <td id="batt_c_n">Ah</td>
+                </tr>
+                <tr>
+                    <th scope="row">90</th>
+                    <td>Die OT detect level</td>
+                    <td id="die_ot_d_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">91</th>
+                    <td>Die OT recover level</td>
+                    <td id="die_ot_r_l">°C</td>
+                </tr>
+                <tr>
+                    <th scope="row">92</th>
+                    <td>Die OT recover delay time</td>
+                    <td id="die_ot_r_d_t">sec</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <!------------------------------中間畫面------------------------------>
+</body>
+
+</html>
